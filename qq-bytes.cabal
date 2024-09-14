@@ -7,12 +7,18 @@ description:
 category:           Text
 license:            Apache-2.0
 license-file:       LICENSE
+homepage:           https://github.com/0y2k/qq-bytes
+bug-reports:        https://github.com/0y2k/qq-bytes/issues
 author:             0y2k <0x0y2k@gmail.com>
 maintainer:         0y2k <0x0y2k@gmail.com>
 build-type:         Simple
 extra-doc-files:
       CHANGELOG.md
     , README.md
+
+source-repository head
+    type:     git
+    location: https://github.com/0y2k/qq-bytes
 
 common depends
     build-depends:
