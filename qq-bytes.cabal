@@ -7,8 +7,8 @@ description:
 category:           Text
 license:            Apache-2.0
 license-file:       LICENSE
-author:             0y2k
-maintainer:         0x0y2k@gmail.com
+author:             0y2k <0x0y2k@gmail.com>
+maintainer:         0y2k <0x0y2k@gmail.com>
 build-type:         Simple
 extra-doc-files:
       CHANGELOG.md
