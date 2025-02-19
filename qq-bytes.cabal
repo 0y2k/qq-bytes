@@ -22,7 +22,7 @@ source-repository head
 
 common depends
     build-depends:
-          base >= 4.16 && < 4.21
+          base >=4.16 && <4.22
         , bytestring >= 0.11 && < 0.13
 
 common warnings
