@@ -34,6 +34,8 @@ instance FromBytes BS.ByteString where
 instance FromBytes BL.ByteString where
   fromBytes = BL.fromStrict
 
+{-# ANN ord_A "HLint: ignore Use camelCase" #-}
+{-# ANN ord_a "HLint: ignore Use camelCase" #-}
 ord_0, ord_A, ord_a :: Int
 ord_0 = ord '0'
 ord_A = ord 'A'
@@ -64,7 +66,7 @@ strWithBase' b
  where
   base = 1 `shiftL` b
   f [] = []
-  f (i:is) = (map (\s -> testBit i s) $ reverse [0..pred b]) ++ f is
+  f (i:is) = map (testBit i) (reverse [0..pred b]) ++ f is
   g [] = []
   g [x0] = [h x0 `shiftL` 7]
   g [x0,x1]
